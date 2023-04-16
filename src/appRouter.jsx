@@ -10,7 +10,7 @@ export function AppRouter(props) {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={
+				<Route path="/demo" element={
 					<div>
 						<RuleFilterProvider>
 						<SidePanelProvider>
@@ -20,7 +20,7 @@ export function AppRouter(props) {
 					</div>
 				} />
 
-				<Route path="/about" element={
+				<Route path="/" element={
 					<div>
 						<About/>
 					</div>

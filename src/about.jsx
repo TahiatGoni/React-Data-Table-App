@@ -10,13 +10,15 @@ export function About(props) {
 				This is part of an application that has many data tables which are interconnected.<br/>
 				If the user highlights a certain row, other table rows that are interconnected are highlighted. The data can also be filtered.<br/>
 				To make the code modular and easy to extend following DRY principles, general components are defined that can be used for all cases.<br/>
-				For detailed account of the implementations, check out the GitHub <a href="">repo</a>.<br/><br/>
+				For detailed account of the implementations, check out the GitHub <a target="_blank" href="https://github.com/TahiatGoni/React-Data-Table-App">repo</a>.<br/><br/>
 
 				The work here is a derivation from the original ideas that I have come up with at work with dummy data for showcasing.<br/>
 				There is nothing in the data for this work that is relevant to, or in any way representative of the employers.
 			</p>
+
+			<div className="unset-link"><a href="/demo"><span className="to-demo">Jump into the Demo!</span></a></div>
 			
-			<div className="link-buttons">
+			<div className="link-buttons footer">
 				<a href="https://github.com/TahiatGoni" target="_blank"><span><img className="square-img-button" src="/icons8-github.svg"/></span></a>
 				<a href="https://www.linkedin.com/in/tahiat-goni" target="_blank"><span><img className="square-img-button" src="/icons8-linkedin-2.svg"/></span></a>
 			</div>
