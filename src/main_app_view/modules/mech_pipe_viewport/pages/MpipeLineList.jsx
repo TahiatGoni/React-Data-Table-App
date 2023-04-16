@@ -19,7 +19,6 @@ export default class MpipeLineList extends Component {
 		this.dataFilter = this.dataFilter.bind(this)
 
 		this.headings = [
-			//headingObjectFactory("Date", 0), 
 			headingObjectFactory("Line No.", 1), 
 			headingObjectFactory("System", 2),
 			headingObjectFactory("Sub-System", 3), 
@@ -74,63 +73,11 @@ export default class MpipeLineList extends Component {
 					addData = connected_filter(data, element, "LNEno", "LNEidno")
 					filteredData = [...filteredData, ...addData]
 					break;
-				case "mpipe_welds":
-					for(let connectedElement of connected_filter(dwgList, element, 'id', 'DWGidno')) {
-						addData = connected_filter(data, connectedElement, "LNEno", "LNEidno")
-						filteredData = [...filteredData, ...addData]
-					}
-					break;
 				case "mpipe_linelist":
 					addData = connected_filter(data, element, "id", "id")
 					filteredData = [...filteredData, ...addData]
 					break;
 				case "mpipe_bonds":
-					for(let connectedElement of connected_filter(dwgList, element, 'id', 'DWGidno')) {
-						addData = connected_filter(data, connectedElement, "LNEno", "LNEidno")
-						filteredData = [...filteredData, ...addData]
-					}
-					break;
-				case "mpipe_fuses":
-					for(let connectedElement of connected_filter(dwgList, element, 'id', 'DWGidno')) {
-						addData = connected_filter(data, connectedElement, "LNEno", "LNEidno")
-						filteredData = [...filteredData, ...addData]
-					}
-					break;
-				case "mpipe_bolts":
-					for(let connectedElement of connected_filter(dwgList, element, 'id', 'DWGidno')) {
-						addData = connected_filter(data, connectedElement, "LNEno", "LNEidno")
-						filteredData = [...filteredData, ...addData]
-					}
-					break;
-				case "mpipe_ndes":
-					for(let connectedElement of connected_filter(this.props.masterdata['welds_table'], element, 'id', 'NDEWid')) {
-						for(let nextConnectedElement of connected_filter(dwgList, connectedElement, 'id', 'DWGidno')) {
-							addData = connected_filter(data, nextConnectedElement, "LNEno", "LNEidno")
-							filteredData = [...filteredData, ...addData]
-						}
-					} 
-					break;
-				case "mpipe_vts":
-					for(let connectedElement of [...connected_filter(this.props.masterdata['welds_table'], element, 'RVTidno', 'id'), ...connected_filter(this.props.masterdata['bonds_table'], element, 'RVTidno', 'id'), ...connected_filter(this.props.masterdata['fuses_table'], element, 'RVTidno', 'id')]) {
-						for(let nextConnectedElement of connected_filter(dwgList, connectedElement, 'id', 'DWGidno')) {
-							addData = connected_filter(data, nextConnectedElement, "LNEno", "LNEidno")
-							filteredData = [...filteredData, ...addData]
-						}
-					} 
-					break;
-				case "mpipe_ht":
-					for(let connectedElement of connected_filter(this.props.masterdata['welds_table'], element, 'id', 'Widno')) {
-						for(let nextConnectedElement of connected_filter(dwgList, connectedElement, 'id', 'DWGidno')) {
-							addData = connected_filter(data, nextConnectedElement, "LNEno", "LNEidno")
-							filteredData = [...filteredData, ...addData]
-						}
-					} 
-					break;
-				case "mpipe_insulation":
-					addData = connected_filter(data, element, "INRidno", "id")
-					filteredData = [...filteredData, ...addData]
-					break;
-				case "mpipe_boltup":
 					for(let connectedElement of connected_filter(dwgList, element, 'id', 'DWGidno')) {
 						addData = connected_filter(data, connectedElement, "LNEno", "LNEidno")
 						filteredData = [...filteredData, ...addData]
@@ -156,14 +103,6 @@ export default class MpipeLineList extends Component {
 
 		const renderTools = [
 							
-							// {
-							// 	"disabled": false,
-							// 	"className": "btn btn-dark",
-							// 	"id": "del_test",
-							// 	"name": "Delete",
-							// 	"src": "assets/util_toolbar/trash.svg",
-							// 	"onClick": ()=>{console.log("Deleted!")},
-							// },
 							{
 								"disabled": false,
 								"className": "btn btn-dark",
@@ -172,14 +111,7 @@ export default class MpipeLineList extends Component {
 								"src": "assets/util_toolbar/filter.svg",
 								"onClick": this.filterGenerator,
 							},
-							// {
-							// 	"disabled": false,
-							// 	"className": "btn btn-dark",
-							// 	"id": "add_test",
-							// 	"name": "Add",
-							// 	"src": "assets/util_toolbar/add.svg",
-							// 	"onClick": ()=>{console.log("Added!")},
-							// },
+
 						]
 
 		if(this.props.content.length === 0) {

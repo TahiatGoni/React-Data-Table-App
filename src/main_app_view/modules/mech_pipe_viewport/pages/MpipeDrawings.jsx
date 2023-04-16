@@ -75,50 +75,11 @@ export default class MpipeDrawings extends Component {
 					addData = connected_filter(data, element, 'id', 'id')
 					filteredData = [...filteredData, ...addData]
 					break;
-				case "mpipe_welds":
-					addData = connected_filter(data, element, 'id', 'DWGidno')
-					filteredData = [...filteredData, ...addData]
-					break;
 				case "mpipe_linelist":
 					addData = connected_filter(data, element, 'LNEidno', 'LNEno')
 					filteredData = [...filteredData, ...addData]
 					break;
 				case "mpipe_bonds":
-					addData = connected_filter(data, element, 'id', 'DWGidno')
-					filteredData = [...filteredData, ...addData]
-					break;
-				case "mpipe_fuses":
-					addData = connected_filter(data, element, 'id', 'DWGidno')
-					filteredData = [...filteredData, ...addData]
-					break;
-				case "mpipe_bolts":
-					addData = connected_filter(data, element, 'id', 'DWGidno')
-					filteredData = [...filteredData, ...addData]
-					break;
-				case "mpipe_ndes":
-					for(let connectedElement of connected_filter(this.props.masterdata['welds_table'], element, 'id', 'NDEWid')) {
-						addData = connected_filter(data, connectedElement, 'id', 'DWGidno')
-						filteredData = [...filteredData, ...addData]
-						
-					} 
-					break;
-				case "mpipe_vts":
-					addData = [...connected_filter(this.props.masterdata['welds_table'], element, 'RVTidno', 'id'), ...connected_filter(this.props.masterdata['bonds_table'], element, 'RVTidno', 'id'), ...connected_filter(this.props.masterdata['fuses_table'], element, 'RVTidno', 'id')]
-					filteredData = [...filteredData, ...addData]	
-					break;
-				case "mpipe_ht":
-					for(let connectedElement of connected_filter(this.props.masterdata['welds_table'], element, 'id', 'Widno')) {
-						addData = connected_filter(data, connectedElement, "id", "DWGidno")
-						filteredData = [...filteredData, ...addData]
-					} 
-					break;
-				case "mpipe_insulation":
-					for(let connectedElement of connected_filter(this.props.masterdata['line_list_table'], element, 'INRidno', 'id')) {
-						addData = connected_filter(data, connectedElement, "LNEidno", "LNEno")
-						filteredData = [...filteredData, ...addData]
-					} 
-					break;
-				case "mpipe_boltup":
 					addData = connected_filter(data, element, 'id', 'DWGidno')
 					filteredData = [...filteredData, ...addData]
 					break;
@@ -143,31 +104,15 @@ export default class MpipeDrawings extends Component {
 		
 		const renderTools = [
 							
-							// {
-							// 	"disabled": false,
-							// 	"className": "btn btn-dark",
-							// 	"id": "del_test",
-							// 	"name": "Delete",
-							// 	"src": "assets/util_toolbar/trash.svg",
-							// 	"onClick": ()=>{console.log("Deleted!")},
-							// },
 							{
 								"disabled": false,
 								"className": "btn btn-dark",
 								"id": "filter_test",
 								"name": "Filter",
 								"src": "assets/util_toolbar/filter.svg",
-								//"onClick": ()=>{this.props.ruleFilter(new Set(["mpipe_drawings_1", "mpipe_drawings_2", "mpipe_drawings_3", "mpipe_drawings_4", "mpipe_drawings_5", "mpipe_drawings_6",]))},
 								"onClick": this.filterGenerator,
 							},
-							// {
-							// 	"disabled": false,
-							// 	"className": "btn btn-dark",
-							// 	"id": "add_test",
-							// 	"name": "Add",
-							// 	"src": "assets/util_toolbar/add.svg",
-							// 	"onClick": ()=>{console.log("Added!")},
-							// },
+
 						]
 
 		if(this.props.content.length === 0) {

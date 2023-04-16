@@ -7,7 +7,6 @@ import { HeaderMain } from './components/jsx/HeaderMain';
 import { MainNav } from './components/jsx/MainNav'
 import './components/css/mainstyle.css';
 import $ from "jquery"
-import {GLOBAL_URL} from '../global_url';
 import { getData } from '../sessionUtils'
 import { ViewportFactory } from './components/jsx/ViewportFactory';
 import { Droppable } from 'react-drag-and-drop';

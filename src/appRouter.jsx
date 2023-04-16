@@ -4,6 +4,7 @@ import { RuleFilterProvider } from './main_app_view/context_providers/RuleFilter
 import { SidePanelProvider } from './main_app_view/context_providers/SidePanelContext.jsx'
 
 import { MainAppRoute } from './main_app_view/main_app'
+import { About } from './about'
 
 export function AppRouter(props) {
 	return (
@@ -21,7 +22,7 @@ export function AppRouter(props) {
 
 				<Route path="/about" element={
 					<div>
-						<p>about</p>
+						<About/>
 					</div>
 				} />
 
