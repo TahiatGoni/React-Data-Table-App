@@ -1,0 +1,51 @@
+.main-text {
+	margin-bottom: 0px;
+	margin-top: 10px;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-family:'Trebuchet MS';
+	white-space: nowrap;
+	/* text-decoration: underline; */
+	font-weight: bold;
+
+}
+.tast-title{
+	padding-top: 20px;
+	margin-top: 20px;
+}
+.main-img{
+	
+	filter: invert(13%) sepia(38%) saturate(6959%) hue-rotate(345deg) brightness(108%) contrast(103%) ;
+    width: 30px;
+    height: 30px;
+	margin-bottom: 10px;
+}
+
+.sub-text {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-size: 0.75em;
+	white-space: nowrap;
+}
+
+.task-bar-containter{
+	background-color:  rgba(26, 26, 26, 0.8);
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	border-top: 2px solid rgba(255, 255, 255, 0.7);
+	border-left: 2px solid rgba(255, 255, 255, 0.7);
+	border-right: 2px solid rgba(255, 255, 255, 0.7);
+
+	border-radius: 0px 0px 0px 0px;
+	margin-left: 0;
+}
+
+.close-btn-img{
+
+
+filter: invert(98%) sepia(1%) saturate(104%) hue-rotate(356deg) brightness(118%) contrast(100%);
+
+	width: 32px;
+	height: 32px;
+}

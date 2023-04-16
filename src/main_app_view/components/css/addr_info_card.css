@@ -1,0 +1,34 @@
+.width_label {
+/*	width: 7em;*/
+	width: 55%;
+}
+
+.width_label_small {
+	width: 36%;
+}
+
+.row_margin {
+	margin: 1.5%;
+/*	width: 100%; */
+	width: auto;
+}
+
+#zip {
+	width: 60%;
+}
+
+#address {
+	width: 100%;
+}
+
+#city {
+	width: 100%;
+}
+
+#lsd_lld {
+	width: 100%;
+}
+
+#province {
+	width: 95%;
+}

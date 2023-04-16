@@ -1,0 +1,35 @@
+#main-header {
+	background-image: linear-gradient(to right,rgba(0, 0, 0, 0.97), rgb(0, 0, 0));
+	/* background-image: linear-gradient(to left,rgba(98, 26, 26, 0.8), rgba(0, 0, 0, 0.5)); */
+	box-shadow: 10px 5px 5px rgb(0, 0, 0);
+	background-color: #fff;
+	height: 2em;
+	width: 100%;
+	display: inline-flex; 
+	border-bottom: 0rem solid rgb(214, 214, 214); 
+	margin-bottom: 8px;
+
+	top: 0;
+	
+}
+
+.header-logo {
+	width: 3em;
+	margin-left: 1em;
+}
+
+.header-text {
+	color: white;
+	font-size: 16px;
+}
+
+#qnex-text {
+	margin-top: 0.3em;
+	margin-left: 10em;
+	overflow: hidden;
+}
+
+#prj-text {
+	margin-top: 0.3em;
+	margin-left: 10em;
+}

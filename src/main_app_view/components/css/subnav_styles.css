@@ -1,0 +1,44 @@
+.subnav-span {
+	border: 0.1em solid rgb(0, 0, 0);
+	margin-top: 0em;
+	margin-left: 0em;
+	/* background-color: #840000; */
+	background-image: linear-gradient(to left,rgb(184, 180, 180), rgb(255, 255, 255));
+	font-size: 0.7em;
+	color: black;
+	padding: 0.05em;
+}
+
+.subnav-span:hover {
+	/* background-color: rgb(0, 0, 0); */
+	background: rgb(149, 162, 196);
+	cursor: pointer;
+}
+
+
+.subnav-selected {
+	background-image: linear-gradient(to left,rgb(30, 30, 30), rgb(215, 215, 215));
+}
+
+
+.subnav-span-alternate {
+	border: 0.1em solid rgb(0, 0, 0);
+	margin-top: 0em;
+	margin-left: 0em;
+	/* background-color: #840000; */
+	background-image: linear-gradient(to left,rgb(14, 10, 10), rgb(225, 225, 225));
+	font-size: 0.7em;
+	color: black;
+	padding: 0.05em;
+}
+
+.subnav-span-alternate:hover {
+	/* background-color: rgb(0, 0, 0); */
+	background: rgb(149, 162, 196);
+	cursor: pointer;
+}
+.sub-accordion{
+	padding-left: 11px;
+	padding-right: 11px;
+}
+

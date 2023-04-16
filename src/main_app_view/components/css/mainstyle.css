@@ -1,0 +1,130 @@
+#main-container {
+	width: 100%;
+	margin-top: 0em;
+	margin-bottom: auto;
+	margin-left: 0;
+	margin-right: auto;
+	max-height: 98vh;
+	padding-left: 0 !important;
+}
+.layout{
+	padding-left: 0px !important;
+}
+
+.main-row {
+	/* height: 94%; */
+	min-height: 94vh;
+	padding: 0em;
+	margin: 0em;
+	margin-left: 180px !important;
+	
+	display: flex;
+	flex-direction: row;
+	/* margin-bottom: 0.2%; */
+	display: inline-flex;
+}
+
+
+.sub-row {
+	/* padding-top: 0.1em !important; */
+	/* padding: 0.5em; */
+	
+
+	margin-top: 0 !important;
+	margin-left: 130px !important;
+	display: flex;
+	flex-direction: row;
+	/* margin-bottom: 0.2%; */
+	display: inline-flex;
+}
+
+
+.flexible-display {
+	/* max-height: 98vh; */
+	overflow-wrap: inherit;
+}
+
+.drop-view {
+	background-color: blue;
+}
+
+.viewport-col{
+	overflow-y: auto; /* Hide vertical scrollbar */
+	
+}
+
+
+.viewport-col::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+ 
+  
+}
+
+/* Track */
+.viewport-col::-webkit-scrollbar-track {
+  background: rgba(150, 148, 143, 0.3);
+  border-radius: 20px;
+}
+ 
+/* Handle */
+.viewport-col::-webkit-scrollbar-thumb {
+  background: rgba(207, 207, 196, 0.5);
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+.viewport-col::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.flex-overd {
+	display: flex;
+}
+
+
+/*.react-resizable-handle {
+	top: -4% !important;
+	transform: rotate(0) !important;
+	background-image: url("../../../../public/assets/icons/resize-horizontal.svg") !important;
+	color: white !important;
+	content: none !important;
+	width: 50px !important;
+	height: 50px !important;
+	margin-top: 0 !important;
+}
+
+
+.react-resizable-handle-e {
+	top: -4% !important;
+	transform: rotate(0) !important;
+	background-image: url("../../../../public/assets/icons/resize-horizontal.svg") !important;
+	color: white !important;
+	content: none !important;
+	width: 50px !important;
+	height: 50px !important;
+	margin-top: 0 !important;
+}
+*/
+
+.task-title {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	width: 70%;
+	margin: auto;
+}
+
+
+.taskbar-control {
+  display: inline-block;
+  text-align: right;
+	margin-right: 5px;
+}
+
+.collapse-col {
+	overflow: hidden;
+	height: 50px;
+}
+
+

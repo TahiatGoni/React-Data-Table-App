@@ -1,0 +1,82 @@
+.main-accordion {
+	margin-top: 0;
+	margin-bottom: 0.1rem;
+	border-radius: 0px;
+	
+}
+
+.sub-accordion {
+	width: 50px;
+
+	margin-top: 0;
+	margin-bottom: 0.1rem;
+	border-radius: 0px;
+	
+}
+
+.sub-accordion .accordion-button {
+	width: 18px !important;
+	height: 15px !important;
+	padding: 1px;
+  display: block;
+  top: -360%;
+  left: 2800%;
+  color: white;
+  background-color: aliceblue;
+}
+
+.sub-accordion .accordion-button::after {
+	width: 15px !important;
+	height: 15px !important;
+	padding: 1px;
+  display: block;
+  top: -360%;
+  left: 2600%;
+  color: black;
+  background-color: aliceblue;
+  padding-left: 1px;
+  margin-left: 1px;
+}
+
+.sub-accordion .accordion-header {
+	width: 5px;
+	height: 5px;
+}
+
+.accordion-button {
+	background-image: linear-gradient(to left,rgb(0, 0, 0),rgb(12, 12, 12));
+
+	color: rgb(255, 255, 255);
+	font-size: 0.3em !important;
+	
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+	padding: 0px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: rgb(255, 251, 251) !important;
+}
+
+.item-padding {
+	margin-top: 0.0em;
+	border-color: rgb(240, 240, 240) !important;
+	border-radius: 0% ;
+	padding-left: 0%;
+}
+
+.nav-col {
+	position: fixed;
+	display: inline-flex;
+	margin-right: 0px;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	width: 12em;
+	max-width: 165px;
+	border-radius: 0px;
+}

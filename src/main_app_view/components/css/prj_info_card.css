@@ -1,0 +1,28 @@
+.small-select {
+	width: 100%;
+	display: inline-block;
+	float: right;
+}
+
+.medium-select {
+	width: 100%;
+	display: inline-block;
+	float: right;
+}
+
+#prj_num {
+	width: 100%;
+}
+
+#prj_name {
+	width: 100%;	
+}
+
+#cntrct_num {
+	width: 100%;
+}
+
+#cntrct_name {
+	width: 100%;
+}
+
